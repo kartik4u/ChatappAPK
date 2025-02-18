@@ -3,50 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Page</title>
+    <title>App Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px 0;
         }
-        .content {
-            padding: 30px;
-            text-align: center;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
         }
-        .cta-button {
-            background-color: #008CBA;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
             color: white;
-            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-top: 20px;
-            display: inline-block;
+            font-size: 16px;
         }
-        .cta-button:hover {
-            background-color: #005f73;
+        .signup {
+            background: white;
+            color: #2575fc;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            flex-direction: column;
+        }
+        .app-mockup img {
+            width: 200px;
+        }
+        .content h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #2575fc;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .about {
+            margin-top: 50px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Welcome to My Static Page</h1>
-</header>
-
-<div class="content">
-    <p>This is a simple, fast static page created for demonstration purposes. Feel free to use it for your own website.</p>
-    <a href="YOUR_LINK_HERE" class="cta-button">Click Here</a>
-</div>
-
+    <header>
+        <nav>
+            <div class="logo">appy</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="signup">Sign Up</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="app-mockup">
+                <img src="mockup.png" alt="App Mockup">
+            </div>
+            <div class="content">
+                <h1>Start your amazing stuff through appy.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn">Download App</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <p>A beautiful app for consectetur adipiscing elit.</p>
+    </section>
 </body>
 </html>
