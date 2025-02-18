@@ -21,7 +21,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
         }
         .logo {
             font-size: 24px;
@@ -30,7 +31,8 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 15px;
+            gap: 10px;
+            flex-wrap: wrap;
         }
         nav ul li {
             display: inline;
@@ -51,14 +53,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
             flex-direction: column;
+            padding: 20px;
+            text-align: center;
         }
         .app-mockup img {
-            width: 200px;
+            width: 100%;
+            max-width: 300px;
         }
         .content h1 {
-            font-size: 36px;
+            font-size: 28px;
             margin: 20px 0;
         }
         .btn {
@@ -73,6 +77,16 @@
         .about {
             margin-top: 50px;
             padding: 20px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -95,7 +109,7 @@
     <section class="hero">
         <div class="container">
             <div class="app-mockup">
-                <img src="mockup.png" alt="App Mockup">
+                <img src="https://cdn.pixabay.com/photo/2017/01/10/19/18/mobile-1966212_960_720.png" alt="App Mockup">
             </div>
             <div class="content">
                 <h1>Start your amazing stuff through appy.</h1>
